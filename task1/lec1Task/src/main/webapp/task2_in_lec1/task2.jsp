@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="task21.jsp">
+<form action="task21.jsp" method="post">
         <label for="fullName">Full Name:</label><br>
         <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
         <br><br>
@@ -42,4 +42,5 @@
           <button type="submit">Submit</button>
 </form>
 </body>
+
 </html>
