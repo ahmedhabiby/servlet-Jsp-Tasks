@@ -1,0 +1,127 @@
+@charset "UTF-8";
+/* General Page Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #ece9e6, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Container (form card) */
+form {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+/* Headings */
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* Labels and Inputs */
+label {
+    display: block;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    margin-bottom: 18px;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #007BFF;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.02);
+}
+
+/* Special Button (Delete Account) */
+button[style*="background:red"] {
+    background-color: #dc3545 !important;
+}
+
+button[style*="background:red"]:hover {
+    background-color: #b02a37 !important;
+}
+
+/* Messages */
+p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+p[style*="color:red"] {
+    color: #dc3545 !important;
+    font-weight: 500;
+}
+
+p[style*="color:green"] {
+    color: #28a745 !important;
+    font-weight: 500;
+}
+
+/* Links */
+a {
+    display: inline-block;
+    text-align: center;
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Layout adjustments for multiple links */
+body a + a {
+    margin-left: 5px;
+}
+
+/* Optional: Make forms responsive */
+@media (max-width: 400px) {
+    form {
+        width: 90%;
+        padding: 25px;
+    }
+}
